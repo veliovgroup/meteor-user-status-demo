@@ -1,0 +1,38 @@
+<head>
+  <title>demo</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> loginButtons}}
+  {{> hello}}
+  {{> info}}
+</body>
+
+<template name="hello">
+  {{#if currentUser}}
+    <h2>You're - Logged in</h2>
+  {{else}}
+    <h2>You're - not logged in</h2>
+  {{/if}}
+  <p>Your Client status: <b>{{status}}</b></p>
+  <pre>{{log meteorStatus}}</pre>
+  <p>Your Server status: 
+    <ul>
+      <li>Online: <b>{{currentUser.profile.status.online}}</b></li>
+      <li>Idle: <b>{{currentUser.profile.status.idle}}</b></li>
+      <li>lastSeen: <b>{{currentUser.profile.status.lastSeen}}</b></li>
+      <li>lastLogin: <b>{{currentUser.profile.status.lastLogin}}</b></li>
+    </ul>
+  </p>
+</template>
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>

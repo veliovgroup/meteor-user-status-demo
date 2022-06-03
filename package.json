@@ -1,0 +1,12 @@
+{
+  "name": "demo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "jquery": "^3.6.0",
+    "meteor-node-stubs": "^1.0.2"
+  }
+}
