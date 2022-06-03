@@ -1,6 +1,7 @@
-import { Tracker }     from 'meteor/tracker';
-import { Template }    from 'meteor/templating';
-import { UserStatus }  from 'meteor/ostrio:user-status';
+import { Meteor } from 'meteor/meteor';
+import { Tracker } from 'meteor/tracker';
+import { Template }from 'meteor/templating';
+import { UserStatus } from 'meteor/ostrio:user-status';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
